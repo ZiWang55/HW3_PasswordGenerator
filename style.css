@@ -1,0 +1,61 @@
+body {
+    background-color: darkgrey;
+    /* add background img */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* .navbar {
+ 
+} */
+
+.navbar-brand {
+    font-weight: bold;
+    font-size:larger;
+}
+
+.Wrapper {
+    /* background-color: white; */
+    text-align: center;
+    margin: 100px 100px;
+    padding: 50px;
+    /* padding-bottom: 200px; */
+}
+
+.header {
+    /* font-weight: bolder; */
+}
+
+.Container {
+    /* background-color: darkgrey; */
+    /* padding: 10px 10px; */
+    width: 100%;
+}
+
+.PasswordField {
+    background-color: lightgrey;
+    padding: 40px 40px;
+    width: 100%;
+}
+
+.display {
+    width: 100%;
+}
+
+.MutedPasswordText {
+    opacity: 0.3;
+    font-size: 0.20;
+    margin-top: 15px;
+}
+
+.GenerateButton {
+    margin: 30px 30px;
+    padding: 20px 20px;
+    background-color:orange;
+}
+
+.GenerateButton:hover {
+    cursor: pointer;
+    background-color: red;
+    transition-duration: 0.4s;
+    color: white;
+}

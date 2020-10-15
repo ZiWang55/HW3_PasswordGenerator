@@ -12,5 +12,5 @@ Zi Wang
 
 ### Screenshot
 
-![Password Generator]()
+![Password Generator](https://github.com/ZiWang55/HW3_PasswordGenerator/blob/main/Image/screenshot.png?raw=true)
 

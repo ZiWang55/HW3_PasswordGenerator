@@ -20,7 +20,7 @@ let specialChar = ["!", "%", "&", ",", "*", "+", "-", ".", "/", "<", ">", "?", "
 let alphaLower = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 let alphaUpper = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 
-//setting password length
+//settings for password length
 function generatePassword() {
   let confirmLength = parseInt(prompt("Please choose the length for password"));
   //loop if incorrect input
@@ -38,6 +38,7 @@ function generatePassword() {
   let confirmLowerCase = false;
 
   let myPassword = "";
+
   // while loop will be executed until one option is true
   while (!confirmSpecialCharacter && !confirmNumericCharacter && !confirmUpperCase && !confirmLowerCase) {
     confirmSpecialCharacter = (confirm("Would you like Special Characters?"));
@@ -49,6 +50,7 @@ function generatePassword() {
   let validCharacters = []
   if (confirmSpecialCharacter) {
     validCharacters.push(...specialChar);
+
   }
   if (confirmLowerCase) {
     validCharacters.push(...alphaLower);
@@ -61,10 +63,12 @@ function generatePassword() {
   }
   // for loop for generating random index to get password
   console.log(validCharacters);
+
   for (i = 0; i < confirmLength; i++) {
     myPassword += validCharacters[Math.floor(Math.random() * validCharacters.length)]
   }
   console.log(myPassword);
+
   return myPassword;
 }
 
